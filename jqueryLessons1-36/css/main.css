@@ -1,4 +1,21 @@
-a[href*='#'] {
+.mainText {
+   border: #fc635e 1px solid;
+}
+
+
+
+
+/* menu li:nth-child(even) {
+   border: #fc635e 1px solid;
+} */
+menu li:nth-child(odd) {
+   border: #fc635e 1px solid;
+}
+
+
+
+
+/* a[href*='#'] {
    border: #fc635e 1px solid;
 }
 
@@ -32,7 +49,7 @@ img[height='150'] {
 
 nav menu li {
    border: 1px solid #fc635e;
-}
+} */
 
 
 
