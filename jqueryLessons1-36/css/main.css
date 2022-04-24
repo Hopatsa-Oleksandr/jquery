@@ -1,4 +1,25 @@
 /* .mainText {
+   border: 1px solid red;
+} */
+
+/* .before {
+   
+   color: white;
+   padding-left: 50%;
+} */
+
+
+
+/* Робота с class - удаляем и добавляем */
+/* .border {
+   border: 1px solid red;
+   padding: 10px;
+   background: #222;
+   color: white;
+} */
+
+
+/* .mainText {
    border: #fc635e 1px solid;
 } */
 

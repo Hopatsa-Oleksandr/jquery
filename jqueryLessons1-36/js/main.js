@@ -70,15 +70,152 @@ $(function () {
     var className = '.' + element;
     $(className).attr(newAttr, newVlaue);
   }
-  changeAttr('logo', 'title', 'Какой-то новый текст');
+  changeAttr('logo', 'title', 'что- то новенькое добавил)');
 })
 
 //Робота с class - удаляем и добавляем
 https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //1:29:44
 
+$(function () {
+  // $('nav menu').addClass('border').removeClass('border');
+  // $('nav menu').removeClass('border');
+})
+
+//меняем цвет тескста или меняем размер шрифта
+$(function () {
+  // alert($('nav menu').css('font-size'));
+  // alert($('nav menu').css('color'));
+  // $('nav menu li a').css('color', 'red');
+  // $('nav menu li a').css('font-size', '25px')
+  // $('nav menu li a').css('font-size', '25px').css('color', 'blue')
+})
+
+//меняем цвет тескста или меняем размер шрифта похожим образом как в Css
+// $(function () {
+//   $('nav menu li a').css({
+//     'color': '#ff0000',
+//     'font-size': '24px',
+//     'padding': '10px'
+//   });
+// });
+
+//Анимация
+// $(function () {
+//   $('nav menu li a').animate({
+//     'font-size': '24px',
+//     // 'padding-top': '10px',
+//     'padding': '10px'
+    
+//   }, 3000, function () {
+//     alert('Упешная анимация')
+//   });
+// });
+
+//Добавление html тега
+$(function () {
+  // $('.mainText').before('<span class="before">Новый блок</span><p class="before">Абзац текта</p>');
+  // $('.mainText').after('<span class="before">Новый блок</span>');
+  // $('.mainText').append('<span>Новый блок</span>');
+  // $('.mainText').prepend('<span>Новый блок</span>');
+});
+
+$(function () {
+  // $('.before').css({
+  //   'color': '#fc635e',
+  //   'font-size': '24px',
+  //   'padding-left': '550px',
+  //   'margin': '0px'
+  // });
+});
 
 
+//Выбор конкретных обьектов
+$(function () {
+  // $('.icons img').each(function () {
+  //   if ($(this).attr('src')=='img/icon3.png') {
+  //     $(this).fadeOut(1000);
+  //   }
+  // });
+});
+
+//Проверка количества тегов
+$(function () {
+  // alert ($('div').length);
+});
+
+//Проверка циклом
+
+$(function () {
+  for (var i = 0; i < $('li').length; i += 2) {
+  // for (var i = 0; i < $('li').length; i++)
+   };
+});
+
+//Клонирование елементов на html странице
+https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+//1:53:05
+
+$(function () {
+  // var mainText = $('.mainText').clone();
+  // $('body').append(mainText);
+});
+
+//Удаление елементов на html странице
+$(function () {
+  // var mainText = $('.mainText').remove();
+  // $('nav').after(mainText);
+});
+
+//Выбор разных елементов тегов на html странице
+$(function () {
+  $('img, a').css('background', '#222');
+  $('img[alt]').css('background', '#222');
+});
+
+//События
+$(function () {
+  // $('.logo').mouseover(function () {
+  //   alert('Событие mouseover')
+  // });
+});
+$(function () {
+  // $('.logo').mouseout(function () {
+  //   alert('Событие mouseover')
+  // });
+});
+$(function () {
+  // $('.logo').click(function () {
+  //   alert('Событие mouseover')
+  // });
+});
+$(function () {
+  // $('.logo').mousemove(function () {
+  //   alert('Событие mouseover')
+  // });
+});
+$(function () {
+  // $('.logo').mouseup(function () {
+  //   alert('Событие mouseover')
+  // });
+});
+
+$(function () {
+  // Submit
+  // focus
+  // blur
+  // change
+  // reset
+});
+
+$(function () {
+  keypress
+  keydown
+  keyup
+});
+//==============================Закончил на этом этапе============================================24.04.2022=====Пасха=====
+https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+//2:04
 
 
 
