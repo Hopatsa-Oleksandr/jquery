@@ -505,18 +505,96 @@ $(function () {
 //==============================submit/focus=======================================================
 
 $(function () {
-  $('.form1').submit(function(e) {
-    if($('.text1').val()=="") {
-      e.preventDefault();
-      alert('Вы не заполнили поля')
-}
-});
+//   $('.form1').submit(function(e) {
+//     if($('.text1').val()=="") {
+//       e.preventDefault();
+//       alert('Вы не заполнили поля')
+// }
+// });
 });
 
 
-//==============================focus=======================================================
-//https://www.youtube.com/watch?v=9Pqf_AIT2ZI
-//3:01:41
+//focus
+$(function () {
+//   $('.text1').focus(function() {
+//     $(this).css({
+//       'border': '2px double red',
+//       'background': 'green'
+//     })
+// });
+});
+
+
+//blur - типо ХОВЕРА
+$(function () {
+//   $('.text1').focus(function() {
+//     $(this).addClass('border');
+//   });
+//   $('.text1').blur(function() {
+//     $(this).removeClass('border');
+// });
+});
+
+
+//change
+$(function () {
+  // $('#select1').change(function () {
+  //   var v = $('#select1 :selected').val();
+  //   if (v == 1) {
+  //     $('#select2').html('<option value="2">Значение номер 1</option><option value="2">Значение номер 2</option>');
+  //   } else if (v == 2) {
+  //     $('#select2').html('<option value="1">Значение номер 1</option><option value="2">Значение номер 2</option><option value="3">Значение номер 3</option>');
+    
+  //   } else if (v == 3) {
+  //     $('#select2').html('<option value="1">Значение номер 1</option><option value="2">Значение номер 2</option><option value="3">Значение номер 3</option><option value="4">Значение номер 4</option>');
+  //   }
+  // });
+});
+
+
+// то самое что и выше, только через switch
+$(function () {
+  // $('#select1').change(function () {
+  //   var v = $('#select1 :selected').val();
+  //   switch (v) {
+  //     case '1':
+  //       $('#select2').html('<option value="2">Значение номер 1</option><option value="2">Значение номер 2</option>');
+  //       break;
+  //     case '2':
+  //       $('#select2').html('<option value="1">Значение номер 1</option><option value="2">Значение номер 2</option><option value="3">Значение номер 3</option>');
+  //       break;
+  //     case '3':
+  //       $('#select2').html('<option value="1">Значение номер 1</option><option value="2">Значение номер 2</option><option value="3">Значение номер 3</option><option value="4">Значение номер 4</option>');
+  //       break;
+  //     case '4':
+  //       $('#select2').html('<option value="1">Значение номер 1</option>');
+  //       break;
+  //   }
+  // });
+});
+
+//Скрытие, недоступность - disabled
+$(function () {
+  // $(':submit').click(function (e) {
+  //   $('.text2').attr('disabled', 'disabled');
+  //   e.preventDefault();
+  // });
+  //  $(':reset').click(function (e) {
+  //   $('.text2').removeAttr('disabled');
+  //   e.preventDefault();
+  // });
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
