@@ -169,8 +169,8 @@ $(function () {
 
 //Выбор разных елементов тегов на html странице
 $(function () {
-  $('img, a').css('background', '#222');
-  $('img[alt]').css('background', '#222');
+  // $('img, a').css('background', '#222');
+  // $('img[alt]').css('background', '#222');
 });
 
 //События
@@ -209,13 +209,54 @@ $(function () {
 });
 
 $(function () {
-  keypress
-  keydown
-  keyup
+  // keypress
+  // keydown
+  // keyup
+  // load
+  // resize
+  // scroll
 });
 //==============================Закончил на этом этапе============================================24.04.2022=====Пасха=====
 https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //2:04
+
+//Модель событий JS:
+// $(function () {
+//   var myElem = document.getElementById('recive');
+//   function elemClick() {
+//     alert('Модель событий JS');
+//   }
+//   myElem.onclick = elemClick;
+// })
+
+// jquery события:
+$(function () {
+  // $(window).scroll(function(){
+  //   alert("события scroll")
+  // })
+});
+
+$(function () {
+  // $('.arrowDown').click(function(){
+  //   var clone = $(this).clone();
+  //   $(this).after(clone);
+  // })
+});
+
+//==============================Закончил на этом этапе============================================25.04.2022=====Пасха=====
+https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+//2:16 Не преминяеться Ховер ????????????
+$(function () {
+  var link = $('menu li a');
+  link.mouseover(function(){
+    $(this).addClass('border');
+
+  })
+  link.mouseout(function(){
+    $(this).removeClass('border');
+});
+
+
 
 
 
