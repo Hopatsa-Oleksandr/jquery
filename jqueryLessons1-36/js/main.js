@@ -65,22 +65,22 @@
 // })
 
 //Изминение любого атрибута
-$(function () {
-  function changeAttr(element, newAttr, newVlaue) {
-    var className = '.' + element;
-    $(className).attr(newAttr, newVlaue);
-  }
-  changeAttr('logo', 'title', 'что- то новенькое добавил)');
-})
+// $(function () {
+//   function changeAttr(element, newAttr, newVlaue) {
+//     var className = '.' + element;
+//     $(className).attr(newAttr, newVlaue);
+//   }
+//   changeAttr('logo', 'title', 'что- то новенькое добавил)');
+// })
 
 //Робота с class - удаляем и добавляем
-https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+// https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //1:29:44
 
 $(function () {
   // $('nav menu').addClass('border').removeClass('border');
   // $('nav menu').removeClass('border');
-})
+});
 
 //меняем цвет тескста или меняем размер шрифта
 $(function () {
@@ -89,14 +89,14 @@ $(function () {
   // $('nav menu li a').css('color', 'red');
   // $('nav menu li a').css('font-size', '25px')
   // $('nav menu li a').css('font-size', '25px').css('color', 'blue')
-})
+});
 
 //меняем цвет тескста или меняем размер шрифта похожим образом как в Css
 // $(function () {
 //   $('nav menu li a').css({
 //     'color': '#ff0000',
 //     'font-size': '24px',
-//     'padding': '10px'
+//     'padding': '20px'
 //   });
 // });
 
@@ -146,20 +146,20 @@ $(function () {
 
 //Проверка циклом
 
-$(function () {
-  for (var i = 0; i < $('li').length; i += 2) {
-  // for (var i = 0; i < $('li').length; i++)
-   };
-});
+// $(function () {
+//   for (var i = 0; i < $('li').length; i += 2) {
+//   // for (var i = 0; i < $('li').length; i++)
+//    };
+// });
 
 //Клонирование елементов на html странице
-https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+// https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //1:53:05
 
-$(function () {
-  // var mainText = $('.mainText').clone();
-  // $('body').append(mainText);
-});
+// $(function () {
+//   var mainText = $('.mainText').clone();
+//   $('body').append(mainText);
+// });
 
 //Удаление елементов на html странице
 $(function () {
@@ -217,7 +217,7 @@ $(function () {
   // scroll
 });
 //==============================Закончил на этом этапе============================================24.04.2022=====Пасха=====
-https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+// https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //2:04
 
 //Модель событий JS:
@@ -244,17 +244,99 @@ $(function () {
 });
 
 //==============================Закончил на этом этапе============================================25.04.2022=====Пасха=====
-https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+// https://www.youtube.com/watch?v=9Pqf_AIT2ZI
 //2:16 Не преминяеться Ховер ????????????
-$(function () {
-  var link = $('menu li a');
-  link.mouseover(function(){
-    $(this).addClass('border');
+// $(function () {
+//   var link = $('menu li a');
+//   link.mouseover(function () {
+//     $(this).addClass('border');
 
-  })
-  link.mouseout(function(){
-    $(this).removeClass('border');
-});
+//   })
+//   link.mouseout(function () {
+//     $(this).removeClass('border');
+//   });
+// });
+
+// $(function () {
+//   var link = $('menu li a');
+//   link.hover(
+//     function () {
+//       $(this).addClass('border');
+//     }, function () {
+//     $(this).removeClass('border');
+//   });
+// });
+
+
+//==============================Event object============================================
+//Обьект события Event object 2:18:50
+
+
+//Учитываем координаты от краев сайта
+// $(function () {
+//   $('.mainText').click(function (e) {
+//     alert(e.screenX + " " + e.screenY);
+//   })
+// });
+
+//Учитываем координаты от краев браузера
+// $(function () {
+//   $('.mainText').click(function (e) {
+//     alert(e.pageX+ " " + e.pageY);
+//   })
+// });
+
+//Проверка нажатия клавиш alt или ctrl или shift
+// $(function () {
+//   $('.mainText').click(function (e) {
+//     alert(e.altKey);
+//   })
+// });
+
+//Отслеживаем обьект узнаем тип елемента
+// $(function () {
+//   $('.mainText').click(function (e) {
+//     alert(e.target);
+//   })
+// });
+
+//Ссылка работает
+// $(function () {
+//   $('.btn').click(function (e) {
+//     e.preventDefault();
+//   })
+// });
+
+//Ссылка не работает .arrowDown
+// $(function () {
+//   $('.btn, .arrowDown').click(function (e) {
+//     e.preventDefault();
+//   })
+// });
+
+//Ссылка не работает .arrowDown + return false без e, делает то самое что и фунция выше
+// $(function () {
+//   $('.btn, .arrowDown').click(function () {
+    
+//     return false;
+//   })
+// });
+
+
+
+//confirm - смотри что это в JS работает как да или нет, если да, то продолжает действия
+// $(function () {
+//   $('.btn, .arrowDown').click(function (e) {
+//     var answer = confirm('Вы хотите отправить данные?')
+//     if (!answer) {
+//       e.preventDefault();
+//     }
+//   })
+// });
+
+
+//===========Закончили============= --> Переходим к созданию картинок на следующем уроке!
+// 2:28
 
 
 
@@ -276,13 +358,13 @@ $(function () {
 
 //ниже первоначальный код с которого все начинаеться, с такой записью мы можем подключать файлы в верху
 
-$(document).ready(function () {
-  //весь код
-});
-//сокращение
-$(function () {
-  //весь код
-});
+// $(document).ready(function () {
+//   //весь код
+// });
+// //сокращение
+// $(function () {
+//   //весь код
+// });
 
 
 
@@ -339,15 +421,15 @@ $(function () {
 //Примеры как выбирать файлы по атрибутам
 //фильтрация 35.09
 
-$("menu li:even"); //Для не четных
-$("menu li:odd"); //Для четных
-$("img:not(.logo img)");
-$("li:has(a)");
-$("p:contains(client)"); //Выбираем конкретное слово со всеми тегами 'p' в котором есть указанное слово
-$(".logo li:first"); //Первый елемент
-$("#h2 > div + li:last"); //Последний елемент
-$("div:hidden"); // все скрытые елементы
-$("div:visibility"); // все видимые елементы
+// $("menu li:even"); //Для не четных
+// $("menu li:odd"); //Для четных
+// $("img:not(.logo img)");
+// $("li:has(a)");
+// $("p:contains(client)"); //Выбираем конкретное слово со всеми тегами 'p' в котором есть указанное слово
+// $(".logo li:first"); //Первый елемент
+// $("#h2 > div + li:last"); //Последний елемент
+// $("div:hidden"); // все скрытые елементы
+// $("div:visibility"); // все видимые елементы
 
 //www.youtube.com/watch?v=9Pqf_AIT2ZI
 
@@ -360,13 +442,95 @@ $("div:visibility"); // все видимые елементы
 // $('.icon > div'); //дочерние елементы
 // $('.icon img + h4'); //соседние елементы
 
-https: $(function () {
-  $(":submit").click(function (e) {
-    $(".text2").attr("disabled", "disabled");
-    e.preventDefault();
-  });
-  $(":reset").click(function (e) {
-    $(".text2").removeAttr("disabled");
-    e.preventDefault();
-  });
+
+//==============checkbox===================================================
+$(function () {
+  //$(':checkbox').fadeOut(1000);
+  //$('.form1 :checkbox').fadeOut(1000);
+  //$(':radio').fadeOut(1000);
+  //$(':submit').fadeOut(1000);
+  //$(':reset').fadeOut(1000);
+  //$(':file').fadeOut(1000);
+  //$(':button').fadeOut(1000);
+  //$(':text').fadeOut(1000);
+  //$(':password').fadeOut(1000);
+  //$(':input').fadeOut(1000); 
+  //$('.form1 :input').fadeOut(1000);
 });
+
+//Фильтр состояния елементов форм (выбраны или не выбраны)
+$(function () {
+  // $('.form1 :checkbox:checked').fadeOut(1000);
+  // $('.form1 :radio:checked').fadeOut(1000);
+  // $('.form1 :selected').remove();
+})
+
+//============================================================================
+// При вводе тескта в форму и нажатия на отправить всплывает окно с тестом
+$(function () {
+  // $(':submit').click(function () {
+  //   var value = $('textarea').val();
+  //   alert(value);
+  // });
+});
+
+//input
+$(function () {
+  // $(':submit').click(function () {
+  //   var value = $('input.text1').val();
+  //   alert(value);
+  // });
+});
+
+//selected (все выбранные поля в теге)
+$(function () {
+  // $(':submit').click(function () {
+  //   var value = $('#select1 :selected').val();
+  //   alert(value);
+  // });
+});
+
+//Выбираем все checkbox
+$(function () {
+  // $(':submit').click(function () {
+  //   // var value = $(':checkbox').each(function () {
+  //     var value = $(':checkbox:checked').each(function () {
+  //     var value = $(this).val();
+  //     alert(value);
+  //   });
+  // });
+});
+
+
+//==============================submit/focus=======================================================
+
+$(function () {
+  $('.form1').submit(function(e) {
+    if($('.text1').val()=="") {
+      e.preventDefault();
+      alert('Вы не заполнили поля')
+}
+});
+});
+
+
+//==============================focus=======================================================
+//https://www.youtube.com/watch?v=9Pqf_AIT2ZI
+//3:01:41
+
+
+
+
+
+
+
+// $(function () {
+//   $(":submit").click(function (e) {
+//     $(".text2").attr("disabled", "disabled");
+//     e.preventDefault();
+//   });
+//   $(":reset").click(function (e) {
+//     $(".text2").removeAttr("disabled");
+//     e.preventDefault();
+//   });
+// });

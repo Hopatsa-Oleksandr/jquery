@@ -33,7 +33,12 @@
     font-size: 30px;
     font-weight: bold;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 35%;
+    font-size: 15px;
+    background-color: ghostwhite;
+
+    
+    
 }
 .button:hover {
     cursor: pointer;
